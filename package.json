@@ -1,12 +1,12 @@
 {
-  "name": "@raypatterson/bic-logger",
+  "name": "@flickmy/bic-logger",
   "description": "Bic Logger",
   "version": "0.0.0-1",
   "author": {
     "name": "Ray Patterson",
     "email": "github.raypatterson@gmail.com"
   },
-  "bugs": "https://github.com/raypatterson/bic-logger/issues",
+  "bugs": "https://github.com/flickmy/bic-logger/issues",
   "contributors": [
     {
       "name": "Ray Patterson",
@@ -26,7 +26,7 @@
     "node": "0.12.7",
     "npm": "2.12.1"
   },
-  "homepage": "https://github.com/raypatterson/bic-logger#readme",
+  "homepage": "https://github.com/flickmy/bic-logger#readme",
   "keywords": [
     "bic",
     "website",
@@ -37,7 +37,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "repository": "github:raypatterson/bic-logger",
+  "repository": "github:flickmy/bic-logger",
   "scripts": {
     "commit:pre": "git add -A && git commit -m 'Prerelease' && git push",
     "publish:pre": "npm publish --access=public",

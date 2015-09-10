@@ -11,13 +11,13 @@ Currently a wrapper for [Minilog](https://github.com/mixu/minilog).
 ## Install
 
 ```shell
-$ npm install @raypatterson/bic-logger
+$ npm install @flickmy/bic-logger
 ```
 
 ## Usage
 
 ```js
-var logger  = require('@raypatterson/bic-logger')('my logger id');
+var logger  = require('@flickmy/bic-logger')('my logger id');
 
 logger
   .debug('whaaa?!')
