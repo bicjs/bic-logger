@@ -7,6 +7,11 @@
     "email": "github.raypatterson@gmail.com"
   },
   "bugs": "https://github.com/flickmy/bic-logger/issues",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "contributors": [
     {
       "name": "Ray Patterson",
@@ -14,26 +19,32 @@
     }
   ],
   "dependencies": {
-    "minilog": "^2.0.8"
+    "blue-tape": "0.1.10",
+    "bump-cli": "1.1.3",
+    "cz-conventional-changelog": "1.1.4",
+    "faucet": "0.0.1",
+    "fixpack": "2.2.0",
+    "minilog": "2.1.0"
   },
   "devDependencies": {
     "blue-tape": "^0.1.10",
     "bump-cli": "^1.1.3",
+    "cz-conventional-changelog": "^1.1.4",
     "faucet": "0.0.1",
     "fixpack": "^2.2.0"
   },
   "engines": {
-    "node": "5.0.x",
+    "node": "5.1.x",
     "npm": "3.3.x"
   },
   "homepage": "https://github.com/flickmy/bic-logger#readme",
   "keywords": [
     "bic",
-    "website",
-    "framework",
     "console",
+    "framework",
+    "logger",
     "reporting",
-    "logger"
+    "website"
   ],
   "license": "MIT",
   "main": "index.js",
