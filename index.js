@@ -1,16 +1,33 @@
 'use strict';
 
-var logger = require('minilog');
-logger.enable();
+let Logger = require('minilog');
+Logger.enable();
+
+const Levels = {
+  DEBUG: 'debug',
+  INFO: 'info',
+  WARN: 'warn',
+  ERROR: 'error'
+};
 
 module.exports = {
 
-  config: function(options) {
-    // TODO: Configure whatever makes sense
+  Levels: Levels,
+
+  setLevel: (level) => {
+
+    Logger.suggest.defaultResult = false;
+
+    Logger
+      .suggest
+      .clear()
+      .allow(/[\s\S]/, level || Levels.ERROR);
+
+    Logger.enable();
   },
 
-  get: function(name) {
+  get: (name) => {
 
-    return logger(name);
+    return Logger(name);
   }
 };
